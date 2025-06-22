@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;  
+}
