@@ -1,0 +1,169 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0, 0, 255, 0.548);
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;  
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects ul a {
+    color: blue;
+}
+
+.projects ul a:hover {
+    color: rgba(0, 0, 255, 0.548);
+}
+
+#section-01 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-01 h1 {
+    font-size: 5rem;
+}
+
+#section-01 p {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1fr;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.projects {
+    padding: 0 2rem;
+}
+
+.experiences {
+    padding: 0 2rem;
+}
+
+.education {
+    padding: 0 5rem;
+}
+
+#reviews {
+    margin-top: 2rem;
+}
+
+#reviews h2 {
+    padding: 0 0 1rem 10rem;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    gap: 1rem;
+}
+
+.content-container .content {
+    width: 90%;
+    border: 1px solid black;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+@media (max-width: 768px) {
+  /* Styles for phones and smaller tablets */
+  body {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  #section-01 {
+    height: 15vh;
+  }
+
+  #section-01 h1 {
+    font-size: 3.5rem;
+  }
+
+  #section-01 p {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 3rem;
+  }
+
+  .top-container, .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .projects, .experiences, .education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+  }
+
+  .experiences {
+    padding: 0 12rem;
+  }
+
+  #content {
+    margin-top: 2rem;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Add more responsive styles here */
+}
