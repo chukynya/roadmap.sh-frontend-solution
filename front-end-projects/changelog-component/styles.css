@@ -1,0 +1,117 @@
+body {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.changelog {
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.changelog h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: aqua;
+}
+
+.changelog h3 {
+    color: aquamarine;
+}
+
+.changelog p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.groups {
+    position: relative;
+    margin: 20px 0;
+    /* padding: 0; */
+}
+
+.groups:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    /* margin-left: -1%; */
+}
+
+.group {
+  margin-bottom: 20px;
+  position: relative;
+  width: calc(50% + 1px);
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.group:nth-child(odd) {
+    right: 2rem;
+}
+
+.group:nth-child(even) {
+    left: calc(50% - 1px);
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.group:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    border-radius: 50%;
+    right: -4px;
+    background-color: white;
+}
+
+.group:nth-child(even):before {
+    left: -4px;
+    right: auto;
+}
+
+.btn {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    padding: 0.4rem 2.5rem;
+}
+
+@media(min-width: 600px) {
+    .changelog {
+        max-width: 1000px;
+    }
+
+    .changelog h1 {
+        font-size: 4em;
+    }
+
+    .changelog h3 {
+        font-size: 2.5em;
+    }
+
+    .changelog p {
+        font-size: 2em
+    }
+
+    .btn {
+        margin-top: 4rem;
+        font-size: 2rem;
+        padding: 0.8rem 5rem;
+    }
+}
